@@ -437,9 +437,9 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
 function create_post_type_gallery()
 {
-    register_taxonomy_for_object_type('category', 'ccs-gallery'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'ccs-gallery');
-    register_post_type('ccs-gallery', // Register Custom Post Type
+    register_taxonomy_for_object_type('category', 'galleries'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'galleries');
+    register_post_type('galleries', // Register Custom Post Type
         array(
         'labels' => array(
             'name' => __('Galleries', 'gallery'), // Rename these to suit
