@@ -22,15 +22,39 @@
 
 		<h1><?php the_sub_field('section_title'); ?></h1>
 
-		<?php if ( have_rows('section_images') ): ?>
+		<?php if ( have_rows('section_media') ): $i = 0; ?>
 
 			<div class="gallery-images">
 
-			<?php while ( have_rows('section_images') ): the_row(); ?>
+			<?php while ( have_rows('section_media') ): the_row(); $i++; ?>
 				
-				<li class="gallery-image" data-image="<?php $image = get_sub_field('image'); echo $image['url']; ?>" style="background:url('<?php $image = get_sub_field('image'); echo $image['url']; ?>') center center no-repeat; background-size:cover;" alt="" />
-					<div class="gallery-image-height"></div>
-				</li>
+				<?php if ( get_row_layout() == 'image' ):
+					
+					// define image url	
+					$image = get_sub_field('image'); ?>
+
+					<li id="lightbox-item-<?php echo $i; ?>"
+						class="gallery-slide-image" 
+						data-image="<?php echo $image['url']; ?>" 
+						style="background:url('<?php echo $image['url']; ?>') center center no-repeat; background-size:cover;" />
+						<div class="gallery-image-height"></div>
+					</li>
+
+				<?php else: 
+
+					// define video thumbnail and embed code
+					$video_embed = get_sub_field('video_embed');
+					$video_thumbnail = get_sub_field('video_thumbnail'); ?>
+
+					<li 
+						id="lightbox-item-<?php echo $i; ?>"
+						class="gallery-slide-video" 
+						data-video='<?php echo $video_embed; ?>' 
+						style="background:url('<?php echo $video_thumbnail['url']; ?>') center center no-repeat; background-size:cover;" />
+						<div class="gallery-image-height"></div>
+					</li>
+
+				<?php endif; ?>
 
 			<?php endwhile; ?>
 

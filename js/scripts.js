@@ -144,7 +144,9 @@
 			function activateLightbox() {
 				$triggerImage.on('click', function(){
 					var $galleryImages = $(this).parent('.gallery-images').find('.gallery-image'),
-						$activeImage = $(this).attr('data-image');
+						// $activeImage = $(this).attr('data-image'),
+						$activeSlide = $(this).attr('id'),
+						$idCounter = 0;
 
 					// make lightbox element visibile
 					$lightbox.addClass('visible');
@@ -153,12 +155,13 @@
 					$galleryImages.each(function(){
 						var $imageUrl = $(this).attr('data-image');
 
+						$idCounter++;
+
 						// need to replace with new elements when lightbox is clicked again
-						$lightbox.append('<li class="lightbox-image"><img src="' + $imageUrl + '"/></li>');
+						$lightbox.append('<li data-target="lightbox-item-'+$idCounter+'" class="lightbox-image"><img src="' + $imageUrl + '"/></li>');
 												
-						// add active class to image that was clicked
 						$('.lightbox-image').each(function(){
-							if ($(this).find('img').attr('src') === $activeImage){
+							if ($(this).attr('data-target') === $activeSlide){
 								$(this).addClass('active');
 							} else {
 								$(this).removeClass('active')
