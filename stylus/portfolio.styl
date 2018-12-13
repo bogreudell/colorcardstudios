@@ -1,67 +1,25 @@
 body
 	&.portfolio
+		#portfolio-galleries
+			max-width none
+			margin-top 100px
 
-		#gallery-nav
-			position fixed
-			left 0
-			width 20%
-			margin 0
-			padding 150px 0 0 40px
+			ul
+				padding-left 0
 
-			li
-				list-style none
-				text-transform uppercase
-				font-weight 700
-				margin-bottom 10px
-				
-				a
-					-webkit-transition color .2s ease-in-out
-					-moz-transition color .2s ease-in-out
-					-ms-transition color .2s ease-in-out
-					-o-transition color .2s ease-in-out
-					transition color .2s ease-in-out
-					
-					&:hover
-						color $colorscheme
+				li
+					display inline-block
+					width 33%
 
-		#galleries
-			float right
-			width 80%
-			padding-right 40px
-			box-sizing border-box
+					.portfolio-gallery-thumbnail
+						width 100%
 
-			section
-				&.gallery
-					padding-top 150px
-					
-					h1
-						text-align right
-						margin 0 0 40px 0
-						text-transform uppercase
-						font-size 6rem
+						.inner-padding
+							padding-bottom 133%
 
-					&:last-of-type
-						margin-bottom 60px
-					
-					.gallery-images
-						list-style none
-						
-						.gallery-image
-							display inline-block
-							width 33%
-							margin-bottom 1px
-							-webkit-transition filter .2s ease-in-out
-							-moz-transition filter .2s ease-in-out
-							-ms-transition filter .2s ease-in-out
-							-o-transition filter .2s ease-in-out
-							transition filter .2s ease-in-out
-							
-							.gallery-image-height
-								width 100%
-								padding-bottom 100%
-							
-							&:hover
-								cursor pointer
-								-webkit-filter grayscale(100%)
-								-o-filter grayscale(100%)
-								filter grayscale(100%)
+					h2
+						width 100%
+						margin 20px 0
+						font-size 1.4rem
+						letter-spacing 0.12rem
+						text-align center
