@@ -1,0 +1,135 @@
+body {
+  font-size: 14pt;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 40px;
+  z-index: 5;
+  -webkit-transition: background 0.09s ease-in-out;
+  -moz-transition: background 0.09s ease-in-out;
+  -ms-transition: background 0.09s ease-in-out;
+  -o-transition: background 0.09s ease-in-out;
+  transition: background 0.09s ease-in-out;
+}
+header.active {
+  background: $white;
+}
+header.active .logo {
+  height: 30px;
+}
+header .header-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .logo {
+  display: inline-block;
+  height: 50px;
+  margin-top: 15px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+header .logo .logo-img {
+  width: auto;
+  height: 100%;
+}
+header .nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .nav ul {
+  padding: 0;
+  margin: 0;
+}
+header .nav ul li {
+  margin: 20px 20px 0 0;
+  display: inline-block;
+  font-size: 1.4rem;
+  letter-spacing: 0.12rem;
+}
+header .nav ul li a {
+  -webkit-transition: 0.1s color ease-in-out;
+  -o-transition: 0.1s color ease-in-out;
+  transition: 0.1s color ease-in-out;
+}
+header .nav ul li:last-of-type {
+  margin-right: 0;
+}
+header .nav ul li:hover a {
+  color: $colorscheme;
+}
+header .nav ul li.current-menu-item a {
+  color: $colorscheme;
+}
+header .nav ul li a,
+header .nav ul li a:visited {
+  text-transform: uppercase;
+  font-family: $pragmatica;
+}
+aside {
+  float: left;
+}
+aside.text {
+  width: 40%;
+  padding: 0 0 0 3%;
+  font-family: $jenson;
+}
+aside.media {
+  width: 57%;
+}
+.cta-button {
+  display: block;
+  margin: 100px auto 0;
+  max-width: 450px;
+  padding: 20px 0;
+  background: $black;
+  font-family: $pragmatica;
+  font-size: 3rem;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s background ease-in-out;
+  -moz-transition: 0.2s background ease-in-out;
+  -ms-transition: 0.2s background ease-in-out;
+  -o-transition: 0.2s background ease-in-out;
+  transition: 0.2s background ease-in-out;
+}
+.cta-button:hover {
+  background: $colorscheme;
+}
+.secondary-cta {
+  font-size: 1.4rem;
+  letter-spacing: 0.12rem;
+  -webkit-transition: 0.1s color ease-in-out;
+  -o-transition: 0.1s color ease-in-out;
+  transition: 0.1s color ease-in-out;
+  text-transform: uppercase;
+  font-family: $pragmatica;
+}
+.secondary-cta:hover {
+  color: $colorscheme;
+}
+footer {
+  width: 100%;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  background: $colorscheme;
+}
+footer .copyright {
+  font-size: 1.4rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  font-family: $pragmatica;
+}
+footer .address {
+  font-family: $jenson;
+}

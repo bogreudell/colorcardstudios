@@ -1,0 +1,65 @@
+body.services .carousel li.slide .caption {
+  color: $black;
+}
+body.services .carousel li.carousel-nav {
+  display: none;
+}
+body section.service {
+  position: relative;
+  height: 768px;
+  height: 75vh;
+  margin-top: 300px;
+}
+body section.service:nth-of-type(2n) {
+  border-left: none !important;
+}
+body section.service:nth-of-type(2n) .section-content {
+  left: initial !important;
+  right: 0 !important;
+  text-align: right;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 0 !important;
+}
+body section.service:nth-of-type(2n) .section-content p {
+  float: right;
+  padding-left: 0 !important;
+  border-left: 0 !important;
+}
+body section.service .section-content {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 100%;
+  max-width: 650px;
+  left: 0;
+  padding: 10px 40px 15px;
+  border-top-right-radius: 1px;
+  background: $white;
+}
+body section.service .section-content h1 {
+  font-size: 6rem;
+  margin: 0 0 40px 0;
+  font-family: $pragmatica;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 0.95em;
+  color: $colorscheme;
+}
+body section.service .section-content p {
+  width: 300px;
+  margin-top: 0;
+  font-family: $jenson;
+}
+body .services-cta {
+  padding: 150px 0;
+  background: #fafafa;
+}
+body .services-cta .cta-button {
+  margin-top: 0;
+  background: $colorscheme;
+}
+body .services-cta .secondary-cta {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}

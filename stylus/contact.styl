@@ -1,0 +1,102 @@
+body
+	&.page-template-template-contact
+		section
+			&#contact-forms
+				position relative
+				height 75vh
+				background #eee
+
+				#forms-wrapper
+					position absolute
+					top 50%
+					left 100px
+					width 100%
+					max-width 500px
+					-webkit-transform translateY(-50%)
+					-ms-transform translateY(-50%)
+					-o-transform translateY(-50%)
+					transform translateY(-50%)
+					background $white
+
+					.form-toggle
+						button
+							float left
+							width 50%
+							margin 0
+							border 0
+							padding 10px 0
+							text-transform uppercase
+							font-family $pragmatica
+							font-size 1.4rem
+							letter-spacing 0.12rem
+							color $white
+							background $colorscheme
+							-webkit-transition .1s color ease-in-out
+							-o-transition .1s color ease-in-out
+							transition .1s color ease-in-out
+
+							&:hover, &.active
+								color $black
+								background $white
+
+							&:focus
+								outline none
+
+					.contact-form
+						display none
+						padding 0 20px 10px
+
+						&.active
+							display block
+
+						p
+							margin-bottom 25px
+
+							&:last-of-type
+								margin-bottom 10px
+
+							input, textarea
+								display block
+								width 100%
+								margin auto 
+								border 0
+								border-bottom 1px solid $grey
+								padding 5px 0 5px
+								font-family $jenson
+								-webkit-transition .2s background ease-in-out
+								-o-transition .2s background ease-in-out
+								transition .2s background ease-in-out
+								-webkit-transition .1s padding ease-in-out
+								-o-transition .1s padding ease-in-out
+								transition .1s padding ease-in-out
+
+								&:focus
+									outline none
+									padding-left 5px
+									background #fafafa
+
+							input
+								&[type="submit"]
+									padding 10px 0
+									font-family $pragmatica
+									font-size 1.4rem
+									letter-spacing 0.12rem
+									text-transform uppercase
+									border 0
+									background $colorscheme
+									color $white
+
+								&:focus
+									border-bottom 1px solid $colorscheme
+
+							textarea
+								margin-top 10px 
+								border-top 1px solid $grey
+								resize none
+
+								&:focus
+									border-top 1px solid $colorscheme
+									border-bottom 1px solid $colorscheme
+
+			&#contact-information
+				padding 100px 0

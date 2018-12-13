@@ -1,0 +1,86 @@
+/*body
+	&#purple
+		header
+			border-bottom 2px solid $purple
+
+			nav
+				li
+					&.current-menu-item
+						a
+							color $purple
+
+					&:hover
+						a
+							color $purple
+
+		footer
+			background $purple
+
+	&#orange
+		header
+			border-bottom 2px solid $orange
+
+			nav
+				li
+					&.current-menu-item
+						a
+							color $orange
+
+					&:hover
+						a
+							color $orange
+
+		footer
+			background $orange
+
+	&#magenta
+		header
+			border-bottom 2px solid $magenta
+
+			nav
+				li
+					&.current-menu-item
+						a
+							color $magenta
+
+					&:hover
+						a
+							color $magenta
+
+		footer
+			background $magenta
+
+	&#green
+		header
+			border-bottom 2px solid $green
+
+			nav
+				li
+					&.current-menu-item
+						a
+							color $green
+
+					&:hover
+						a
+							color $green
+
+		footer
+			background $green
+
+	&#red
+		header
+			border-bottom 2px solid $red
+
+			nav
+				li
+					&.current-menu-item
+						a
+							color $red
+
+					&:hover
+						a
+							color $red
+
+		footer
+			background $red
+*/

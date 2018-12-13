@@ -1,0 +1,71 @@
+body
+	&.services
+
+		.carousel
+			li
+				&.slide
+					.caption
+						color $black
+
+				&.carousel-nav
+					display none
+
+	section
+		&.service
+			position relative
+			height 768px
+			height 75vh
+			margin-top 300px
+
+			&:nth-of-type(2n)
+				border-left none !important
+
+				.section-content
+					left initial !important
+					right 0 !important
+					text-align right
+					border-top-left-radius 1px
+					border-top-right-radius 0 !important
+
+					p
+						float right
+						padding-left 0 !important
+						border-left 0 !important
+
+			.section-content
+				position absolute
+				bottom 0
+				width 90%
+				height 100%
+				max-width 650px
+				left 0
+				padding 10px 40px 15px
+				border-top-right-radius 1px
+				background $white
+
+				h1
+					font-size 6rem
+					margin 0 0 40px 0
+					font-family $pragmatica
+					text-transform uppercase
+					letter-spacing .05em
+					line-height .95em
+					color $colorscheme
+
+				p
+					width 300px
+					margin-top 0
+					font-family $jenson
+
+	.services-cta
+		padding 150px 0
+		background #fafafa
+		
+		.cta-button
+			margin-top 0
+			background $colorscheme
+		
+		.secondary-cta
+			display block
+			margin-top 40px
+			text-align center

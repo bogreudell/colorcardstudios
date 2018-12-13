@@ -1,0 +1,33 @@
+body.home .css_front-page-content {
+  position: relative;
+  min-height: 100vh;
+}
+body.home .css_front-page-content .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+body.home .css_front-page-content .wrapper h1 {
+  margin: 0 auto 100px;
+  font-size: 6rem;
+  font-family: $pragmatica;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colorscheme;
+}
+body.home .css_front-page-content .wrapper h2 {
+  margin: 0 auto;
+  width: 680px;
+  font-size: 1.5em;
+  font-family: $jenson;
+  font-weight: 100;
+  text-align: center;
+}
+body.home .css_front-page-content .wrapper .cta-button {
+  margin-bottom: 0;
+  background: $colorscheme;
+}
